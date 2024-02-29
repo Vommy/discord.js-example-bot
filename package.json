@@ -18,11 +18,12 @@
   "homepage": "https://github.com/Vommy/Discord-Music-Bot#readme",
   "dependencies": {
     "discord-interactions": "^3.4.0",
-    "discord.js": "^14.14.1",
-    "express": "^4.18.2"
+    "discord.js": "^14.14.1"
   },
   "devDependencies": {
+    "@types/express": "^4.17.21",
     "@types/node": "^20.11.22",
+    "express": "^4.18.2",
     "typescript": "^5.3.3"
   }
 }
