@@ -1,7 +1,7 @@
 {
-  "name": "discord-music-bot",
+  "name": "discord-js-example",
   "version": "1.0.0",
-  "description": "A Discord bot that play music. Contains play, pause, skip, queue, connect and disconnect features. ",
+  "description": "A Discord bot example from discord.js. ",
   "main": "dist/app.js",
   "scripts": {
     "dev": "tsx watch src/app.ts",
