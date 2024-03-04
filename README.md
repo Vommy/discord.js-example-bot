@@ -1,6 +1,10 @@
 # Discord JS - Documentation Example
 This is my implementation of the discord.js getting started bot example. I created this bot to help better understand folder structure for creating bots in Discord as well as how to use TypeScript in Discord bot development. 
 
+Here is the link to the example: 
+
+https://discordjs.guide/#before-you-begin
+
 ## What have I learnt?
 1. Source files (TypeScript files in this case) should be stored inside of a src folder and compiled files for deployment should be stored in a dist folder.
 2. Within your src folder, there are four main files/folders to have. A commands folder, an events folder, app.ts/index.ts, and a deploy-commands.ts file.
