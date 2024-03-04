@@ -1,9 +1,4 @@
-import {
-  Client,
-  Collection,
-  CommandInteraction,
-  GatewayIntentBits,
-} from "discord.js";
+import { Client, Collection, GatewayIntentBits } from "discord.js";
 
 class MySuperClient extends Client {
   public commands: Collection<string, any>;

@@ -1,11 +1,9 @@
-import { ChatInputCommandInteraction } from "discord.js";
 import MySuperClient from "./classes/MySuperClient";
 
 //Dependencies
 const dotenv = require("dotenv");
 const fs = require("node:fs");
 const path = require("node:path");
-const { Collection, Events, GatewayIntentBits } = require("discord.js");
 
 dotenv.config();
 
