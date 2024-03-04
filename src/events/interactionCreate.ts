@@ -1,12 +1,15 @@
 import { ChatInputCommandInteraction } from "discord.js";
+import MySuperClient from "../classes/MySuperClient";
 const { Events } = require("discord.js");
 
 module.exports = {
   name: Events.InteractionCreate,
   async execute(interaction: ChatInputCommandInteraction) {
+    const client: MySuperClient = <MySuperClient>interaction.client;
+
     if (!interaction.isChatInputCommand()) return;
 
-    const command = interaction.client.commands.get(interaction.commandName);
+    const command = client.commands.get(interaction.commandName);
 
     if (!command) {
       console.error(

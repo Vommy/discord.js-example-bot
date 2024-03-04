@@ -1,4 +1,5 @@
-import { ChatInputCommandInteraction, Client } from "discord.js";
+import { ChatInputCommandInteraction } from "discord.js";
+import MySuperClient from "./classes/MySuperClient";
 
 //Dependencies
 const dotenv = require("dotenv");
@@ -8,12 +9,9 @@ const { Collection, Events, GatewayIntentBits } = require("discord.js");
 
 dotenv.config();
 
-const client = new Client({
-  intents: [GatewayIntentBits.Guilds],
-});
+const client = new MySuperClient();
 
 //Initializes client commands as a new collection.
-client.commands = new Collection();
 const foldersPath = path.join(__dirname, "commands");
 const commandFolders = fs.readdirSync(foldersPath);
 
