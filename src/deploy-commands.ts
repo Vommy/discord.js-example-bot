@@ -40,8 +40,11 @@ const rest = new REST().setToken(process.env.TOKEN);
     );
 
     // The put method is used to fully refresh all commands in the guild with the current set
+    //Guild based deployment commands should be used for developement.
+    //When your application is ready, you can use the global route for global commands.
     const data = await rest.put(
       Routes.applicationGuildCommands(process.env.APP_ID, process.env.GUILD_ID),
+      //Routes.applicationCommands(process.env.APP_ID), *Global commands route.
       { body: commands }
     );
 
